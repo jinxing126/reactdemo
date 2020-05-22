@@ -1,11 +1,13 @@
 import React from 'react';
-import Breadcrumb from './Page/Breadcrumb';
+import { Map } from 'react-amap';
 import './App.css';
+const AMAP_KEY = 123
+const VERSION = '2222'
 
 function App() {
   return (
     <div className="App">
-      <Breadcrumb></Breadcrumb>
+      <Map amapkey={AMAP_KEY} version={VERSION} />,
     </div>
   );
 }
